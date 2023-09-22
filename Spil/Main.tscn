@@ -1,0 +1,158 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://leech.tscn" type="PackedScene" id=4]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cure.tscn" type="PackedScene" id=6]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." groups=["Player"] instance=ExtResource( 1 )]
+position = Vector2( -85, 385 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+smoothing_enabled = true
+
+[node name="Enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 835, 178 )
+moveDist = 400
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource( 5 )]
+
+[node name="Enviroment" type="Node" parent="."]
+
+[node name="Tile" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 43, 484 )
+
+[node name="Tile2" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 108, 484 )
+
+[node name="Tile3" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 172, 484 )
+
+[node name="Tile4" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 236, 484 )
+
+[node name="Tile5" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 301, 484 )
+
+[node name="Tile6" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 365, 484 )
+
+[node name="Tile7" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( -150, 484 )
+
+[node name="Tile33" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( -150, 484 )
+
+[node name="Tile8" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( -85, 484 )
+
+[node name="Tile9" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( -21, 484 )
+
+[node name="Tile13" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 364, 290 )
+
+[node name="Tile14" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 172, 290 )
+
+[node name="Tile15" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 237, 290 )
+
+[node name="Tile16" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 301, 290 )
+
+[node name="Tile21" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 815, 484 )
+
+[node name="Tile22" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 623, 484 )
+
+[node name="Tile23" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 688, 484 )
+
+[node name="Tile24" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 752, 484 )
+
+[node name="Tile25" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1072, 484 )
+
+[node name="Tile26" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 880, 484 )
+
+[node name="Tile27" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 945, 484 )
+
+[node name="Tile28" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1009, 484 )
+
+[node name="Tile29" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1328, 484 )
+
+[node name="Tile30" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1136, 484 )
+
+[node name="Tile31" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1201, 484 )
+
+[node name="Tile32" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1265, 484 )
+
+[node name="Tile34" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1393, 484 )
+
+[node name="Tile35" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1649, 484 )
+
+[node name="Tile36" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1457, 484 )
+
+[node name="Tile37" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1522, 484 )
+
+[node name="Tile38" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 1586, 484 )
+
+[node name="Tile17" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 835, 290 )
+
+[node name="Tile18" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 642, 290 )
+
+[node name="Tile19" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 707, 290 )
+
+[node name="Tile20" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 771, 290 )
+
+[node name="Tile10" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 430, 484 )
+
+[node name="Tile11" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 495, 484 )
+
+[node name="Tile12" parent="Enviroment" groups=["Graund"] instance=ExtResource( 2 )]
+position = Vector2( 559, 484 )
+
+[node name="Colectabols" type="Node" parent="."]
+
+[node name="leech" parent="Colectabols" instance=ExtResource( 4 )]
+position = Vector2( 701, 226 )
+
+[node name="leech2" parent="Colectabols" instance=ExtResource( 4 )]
+position = Vector2( 261, 231 )
+
+[node name="leech3" parent="Colectabols" instance=ExtResource( 4 )]
+position = Vector2( 498, 420 )
+
+[node name="leech4" parent="Colectabols" instance=ExtResource( 4 )]
+position = Vector2( 1080, 430 )
+
+[node name="Cure" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1432, 372 )
